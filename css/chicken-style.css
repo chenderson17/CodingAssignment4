@@ -1,6 +1,6 @@
 
 body{
-    background-image:linear-gradient(rgba(34, 33, 33, 0.7),rgba(58, 56, 56, 0.7)) , url("../images/chicken-images/");
+    background-image:linear-gradient(rgba(34, 33, 33, 0.7),rgba(58, 56, 56, 0.7)) , url("../images/chicken-images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
