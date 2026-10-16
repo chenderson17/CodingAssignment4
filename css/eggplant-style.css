@@ -1,0 +1,307 @@
+/*
+Include atleast one manipulation per element
+https://fonts.google.com/ ###for fonts
+canva.com/colors/color-palette-generator ###Personally reccomended
+
+Color Pallete
+
+Arrowtown
+#9a866e or #986 or rgb(154, 134, 110)
+
+Birch
+#31281d or #321 or rgb(049, 040, 029)
+
+Quill Gray
+#d4d4d2 or #ddd or rgb(212, 212, 210)
+
+Irish Coffee
+#543623 or #532 or rgb(084, 054, 035)
+
+*/
+
+@keyframes flashing { /* This exists so I can check element boxes */
+    from {
+        border: solid skyblue 2px;
+    }
+    50% {
+        border: solid #0000 2px;
+    }
+    75% {
+        border: solid #0000 2px;
+    }
+    to {
+        border: solid skyblue 2px;
+    }
+}
+/* Debugging selector */
+/* * {
+    border: solid skyblue 2px;
+    margin: 10px;
+    animation: flashing 5s linear infinite;
+    } */
+
+
+body {
+    background-image: url(../images/kitchen-bg.jpg);
+    background: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+
+}
+
+h1, h2, h3 {
+    padding: 4px;
+}
+
+h1 {
+    background-color: #fff7;
+    color: #321;
+    border-top: solid black 1px;
+    border-radius: 20px 20px 100% 100%;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    margin: 10px;
+    font-size: 30px;
+    
+}
+
+h2 {
+    font-size: 25px;
+    border: solid black 1px;
+    border-top: 0;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 300px;
+    text-wrap: pretty;
+    margin: 10px;
+}
+
+h3 {
+    background: #ddda;
+    color: #321;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    /* flex: 1 auto; */
+}
+
+header p {
+    background-color: #ddd9;
+    border-radius: 0.2em;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.empty { /*emptyparagraph*/
+    background-color: #0000;
+    color: #0000;
+}
+
+p.right-align {
+    text-align: right;
+}
+
+p.align-left {
+    text-align: left;
+}
+
+p.link-credit {
+    font-size: 0.5em;
+    max-width: 250px;
+    background-color: #9863;
+}
+
+figure {
+    background-color: #986a;
+    border-radius: 0.3rem;
+    padding: 1em;
+    max-width: 550px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* border: solid #f59 3px; */
+    }
+
+img {
+    background-color: #000;
+    border-radius: 1em;
+    width: 250px;
+}
+
+figcaption {
+    background-color: #3219;
+    border-radius: 0.5em;
+    color: #ddd;
+    max-width: 250px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #cdfa;
+}
+
+ul {
+    background-color: #321b;
+    border-radius: 1em;
+    text-align: center;
+    margin-bottom: 10px; 
+    flex-grow: 1;
+}
+
+li {
+    color: #ddd;
+    margin: 15px;
+}
+
+/* form items */
+form {
+    border: solid #3212 2px;
+    border-radius: 0.3rem;
+    color: #421;
+    background-color: #986a;
+
+    flex: 1;
+}
+
+fieldset{
+    border: solid #3219 2px;
+    background-color: #0002;
+    border-radius: 0.2em;
+}
+
+input{
+    background-color: #986b;
+}
+
+::placeholder {
+    color: #000;
+}
+
+
+legend {
+    border-radius: 0.3em;
+    border: solid #421 2px;
+    border-top: 0px;
+}
+
+hr { /*hr values are depricated*/
+    border: none;
+    height: 2px;
+    background-color: #000;
+}
+
+
+/* Second part of the assingment */
+
+
+/*div, footer {
+    /* border: double cornflowerblue; 
+    /* border: solid skyblue 2px; 
+    animation: flashing 5s linear infinite;
+} */
+
+
+footer {
+    /* display: grid; */
+    /* grid-template-columns: auto auto auto; */
+    /* grid-template-rows: 35px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 10px;
+    text-align: center;
+}
+
+footer p {
+    background-color: #fffb;
+    border: solid #0007 1px;
+    border-radius: 2px;
+    color: #321;
+    margin: 10px;
+    padding: 1px 15px;
+    max-width: 50%;
+
+    flex: 1 auto;
+}
+footer a {
+    text-decoration: none;
+    color: #123a;
+}
+/* Cross recipe by: and attribute over rating table. Connect fig-cap to img */
+
+/* split conversion and rating 50/50 */
+
+div.wrapper1 {
+    /* border: solid #f00 3px;  */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    /* border: solid #f00 1px;    */
+    margin: 2px;  
+ }
+
+ /* Split wrappers for granularity */
+div.wrapper2 {
+    /* border: solid #f00 3px;  */
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ddd5;
+    margin-top: 10px;    
+ }
+ 
+
+
+.box1 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    flex: 1;
+
+    /* border: solid #b0b 1px; */
+}
+.box2 {
+    min-width: 300px;
+
+    flex: 1;
+ 
+    display: flex;
+    flex-flow: column wrap;
+
+    /* border: solid #fa1 1px; */
+}
+.box3 {
+    margin: 10px;
+    min-width: 400px;
+    /* border: solid #f00 1px;  */
+
+    flex: 1;
+    display: flex;
+    flex-flow: column;    
+}
+.box4 {
+    margin: 10px;
+    min-width: 400px;
+    /* border: solid #f00 1px;  */
+
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+
+
+
+
+/* #testdiv1 {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 150px 150px;
+
+} */
