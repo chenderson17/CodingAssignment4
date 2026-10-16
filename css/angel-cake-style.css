@@ -1,0 +1,135 @@
+
+/* General page styling */
+body {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #4a1833;
+    background-color: #fff0f6;
+    background-image: url("../images/PinkBackground.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #a83270;
+    background-color: #ffe0ed;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Other headings */
+h2 {
+    color: #a83270;
+}
+
+h3 {
+    color: #8b245c;
+}
+
+/* Paragraphs */
+p {
+    line-height: 1.5;
+}
+
+/* Links */
+a {
+    color: #8b245c;
+}
+
+/* Recipe image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Lists */
+ul,
+ol {
+    line-height: 1.6;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* GRID LAYOUT */
+/* Makes two columns for the recipe sections */
+.recipe-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Styling for each section */
+.recipe-intro,
+.ingredients,
+.rating-section,
+.conversion-section,
+.directions {
+    padding: 15px;
+    background-color: rgba(255, 250, 253, 0.95);
+    border: 1px solid #e7a2c1;
+    border-radius: 10px;
+}
+
+/* FLEXBOX LAYOUT */
+/* Places the rating and conversion sections side by side */
+.recipe-tools {
+    grid-column: 1 / 3;
+    display: flex;
+    gap: 20px;
+}
+
+/* Gives both sections space */
+.rating-section,
+.conversion-section {
+    flex: 1;
+}
+
+/* Places the directions across both columns */
+.directions {
+    grid-column: 1 / 3;
+}
+
+/* Rating form */
+fieldset {
+    border: 1px solid #d982ad;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+legend {
+    color: #8b245c;
+    font-weight: bold;
+}
+
+/* Arranges the rating choices with Flexbox */
+.rating-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.rating-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Conversion inputs */
+input[type="number"] {
+    width: 100px;
+    padding: 6px;
+    border: 1px solid #d982ad;
+    border-radius: 5px;
+}
+
+/* Footer */
+body > p:last-child {
+    text-align: right;
+    font-size: 14px;
+}
