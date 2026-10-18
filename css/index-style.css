@@ -6,7 +6,7 @@ Don't forget to rename your filepath for rel in the html head.
 *::before,*::after{
     box-sizing: border-box;
 }
-/* body{
+ body{
     background-image:url("../images/index-images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,6 +16,7 @@ Don't forget to rename your filepath for rel in the html head.
   font-weight: 400;
   font-style: normal;
 }
+/*
 a,a:visited{
     color:black;
 }
@@ -51,6 +52,7 @@ footer p{
   font-family: "Noto Sans Linear B", sans-serif;
   font-weight: 300;
   font-style: normal;
+  color:#fff;
 }
 
  h1{
@@ -78,18 +80,16 @@ nav ul li{
     text-align: center;
 }
 a,a:visited{
-    color:black;
     text-decoration: none;
+    color: #fff;
 }
 a:hover{
-    color:rgb(8, 34, 8);
     font-weight: bold;
 }
 main{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    /* background-color: rgb(184, 184, 221); */
     justify-content: center;
     margin:2rem;
 }
@@ -105,5 +105,8 @@ footer{
     justify-content: space-evenly;
 }
 .accent{
-    background-color: rgba(8, 34, 8, 0.144);
+    background-color:#f9f9fd1f;
+}
+.accent{
+    background-color:#1616188e;
 }
